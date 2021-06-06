@@ -6,7 +6,7 @@ public class Main {
 	    Kwadrat kwadrat = new Kwadrat(5);
 	    Kolo kolo = new Kolo(5);
 
-	    System.out.println(kwadrat.obliczPowierzchnie());
-	    System.out.println(kolo.obliczPowierzchnie());
+	    System.out.println("Powierzchnia kształtu to: " + kwadrat.obliczPowierzchnie());
+	    System.out.println("Powierzchnia kształtu to: " + kolo.obliczPowierzchnie());
     }
 }
