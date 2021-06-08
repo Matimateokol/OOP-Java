@@ -1,5 +1,6 @@
 package com.company;
 import java.util.*;
+import java.util.stream.IntStream;
 
 class Pracownik {
     protected String imie;
@@ -14,7 +15,10 @@ class Pracownik {
     }
 
     public void zmien_status_zlecenia(int id_zlecenia, String status) {
-        //Rejestr_zlecen.zlecenia;
-        //Rejestr_zlecen.modyfikuj_zlecenie();
+        int index = IntStream.range(0, Rejestr_zlecen.zlecenia.size())
+                .filter(i -> Objects.equals(Rejestr_zlecen.zlecenia.get(i).id_zlecenia, id_zlecenia))
+                .findFirst()
+                .orElse(-1);
+        Rejestr_zlecen.zlecenia.get(index).status = status;
     }
 }

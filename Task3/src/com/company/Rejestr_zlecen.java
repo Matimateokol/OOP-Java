@@ -2,7 +2,7 @@ package com.company;
 import java.util.*;
 
 class Rejestr_zlecen {
-    public static ArrayList<Zlecenie> zlecenia;
+    public static ArrayList<Zlecenie> zlecenia = new ArrayList<Zlecenie>();
 
     public Rejestr_zlecen() {
     }
@@ -14,11 +14,11 @@ class Rejestr_zlecen {
     }
 
     public static void sortuj_zlecenia_FIFO() {
-        //zlecenia.sort();
+        //Collections.sort(zlecenia.data_utworzenia);
     }
 
     public static void sortuj_zlecenia_LIFO() {
-
+        //Collections.sort(zlecenia.data_utworzenia, Collections.reverseOrder())
     }
 
     public static void usun_zlecenie(int id_zlecenia) {
